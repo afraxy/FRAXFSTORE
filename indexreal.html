@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FRAXSTORE - Link terbaru</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FRAXSTORE - Platform terbaru untuk order jasa desain tugas PPT, pembuatan logo, poster, dan lain sebagainya. #pengerjaancepat" />
+  <img class="rounded-image" src="logo FRAXSTRORE.png"/>
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #a1e8fc;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:focus, button:focus {
+      outline: 3px solid #1e90ff;
+      outline-offset: 2px;
+    }
+      .rounded-image {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    /* Container utama */
+    .container {
+      max-width: 420px;
+      width: 100%;
+    }
+    /* Profil */
+    .profile {
+      margin-bottom: 25px;
+    }
+    .avatar {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120px;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .rounded-image {
+     border-radius: 50%;
+     border: 3px solid #1e90ff;
+     width: 150px;
+     height: 150px;
+     box-shadow: 0 0 15px #1e90ffaa;
+     object-fit: cover;
+     transition: transform 0.3s ease;
+    }
+    .rounded-image:hover {
+     transform: scale(1.1);
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin: 0 0 8px 0;
+      letter-spacing: 2px;
+    }
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #1e1d1d;
+      margin: 0;
+      line-height: 1.4;
+    }
+    p.subtitle strong {
+      color: #1e90ff;
+    }
+     /* Sosial media */
+    .social-icons {
+      margin: 30px 0 40px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background-color: #1e90ff;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(30,144,255,0.5);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+     .link-image {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+        .rounded-image:hover {
+            transform: scale(1.1);
+        }
+    .social-icons a:hover,
+    .social-icons a:focus {
+      background-color: #fdfdfd;
+      transform: scale(1.1);
+    }
+     .social-icons svg #fdfdfd{
+      fill: white;
+      width: 22px;
+      height: 22px;
+    }
+    /* Section title */
+    .section-title {
+      font-weight: 700;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #1e90ff;
+      display: inline-block;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      letter-spacing: 1.5px;
+    }
+    /* Tombol */
+    .button {
+      display: block;
+      background-color: #1e90ff;
+      color: white;
+      padding: 15px 20px;
+      margin: 10px auto;
+      width: 90%;
+      max-width: 320px;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      box-shadow: 0 5px 12px rgba(30,144,255,0.5);
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+      border: none;
+      text-align: center;
+    }
+    .button:hover,
+    .button:focus {
+      background-color: #0d6efd;
+      box-shadow: 0 7px 16px rgba(13,110,253,0.7);
+      transform: translateY(-2px);
+      outline: none;
+    }
+    .button:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 10px rgba(13,110,253,0.5);
+    }
+    /* Footer */
+    footer {
+      margin-top: auto;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      color: #03000066;
+    }
+    /* Responsive */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .button {
+        font-size: 1rem;
+        max-width: 95%;
+      }
+      .section-title {
+        font-size: 1.3rem;
+      }
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    /* Popup notifikasi */
+    #popup {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #1e90ff;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      box-shadow: 0 6px 14px rgba(30,144,255,0.7);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      font-weight: 700;
+      z-index: 1000;
+      font-size: 1rem;
+      user-select: none;
+    }
+    #popup.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+<body>
+  <main class="container" role="main" aria-label="Halaman Link FRAXSTORE">
+    <!-- Profil -->
+    <section class="profile" aria-label="Profil FRAXSTORE">
+      <h1>FRAXSTORE</h1>
+      <p class="subtitle">
+        Platform terbaru untuk order jasa desain tugas PPT, pembuatan logo, poster, dan lain sebagainya.<br />
+        <strong>#Pengerjaancepat</strong><br>
+        <strong>#Proseskilat</strong>
+      </p>
+    </section>
+
+    <!-- Sosial Media -->
+    <nav class="social-icons" aria-label="Sosial Media FRAXSTORE">
+      <a href="https://www.instagram.com/fraxf_store?igsh=ZmNpMTU1NWlzYXpq" target="_blank" rel="noopener noreferrer" aria-label="Instagram FRAXSTORE" title="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <img class="link-image" src="c:\Users\user\Downloads\logo ig.jpg"/>
+        </svg>
+      </a>
+      <a href="https://wa.link/igf1pu" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp FRAXSTORE" title="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <img class="link-image" src="c:\Users\user\Downloads\wa3.jpg"/>
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com/@cynym_?_t=ZS-8zVGOKIeHYr&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok FRAXSTORE" title="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <img class="link-image" src="c:\Users\user\Downloads\logo tiktok.jpg"/>
+        </svg>
+      </a>
+       <a href="https://www.tiktok.com/@cynym_?_t=ZS-8zVGOKIeHYr&_r=1" target="_blank" rel="noopener noreferrer" aria-label="tutorial order" title="Tutorial">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <img class="link-image" src="c:\Users\user\Downloads\new logo.jpg"/>
+        </svg>
+      </a>
+    </nav>
+
+    <!-- Order jasa 12 jam -->
+    <section aria-label="Order jasa 12 jam">
+      <h2 class="section-title">ORDER JASA 12 JAM</h2>
+
+      <h3>Customer Service</h3>
+      <a href="https://www.instagram.com/cyfraa_c1?igsh=Ympuc245am53NGd4" class="button" target="_blank" rel="noopener noreferrer" aria-label="Customer Service Instagram">Instagram</a>
+      <a href="https://www.tiktok.com/@cynym_?_t=ZS-8zVGOKIeHYr&_r=1" class="button" target="_blank" rel="noopener noreferrer" aria-label="Customer Service TikTok">TikTok</a>
+      <a href="https://wa.link/igf1pu" class="button" target="_blank" rel="noopener noreferrer" aria-label="Customer Service WhatsApp">WhatsApp</a>
+    </section>
+
+    <!-- Jasa Populer -->
+    <section aria-label="List Jasa">
+      <h2 class="section-title">LIST JASA & ORDER</h2>
+      <a href="#" class="button" aria-label="Desain PPT">Presentasi/PPT</a>
+      <a href="#" class="button" aria-label="Desain Logo">Pembuatan logo</a>
+      <a href="#" class="button" aria-label="Pembuatan Poster">Poster</a>
+      <a href="#" class="button" aria-label="Pulsa">Top Up Pulsa</a>
+      <a href="#" class="button" aria-label="dana">Top Up Dana</a>
+       </a>
+    </section>
+  </main>
+
+   <!-- Order sementara disini -->
+    <section aria-label="Order sementara disini">
+      <h2 class="section-title">ORDER SEMENTARA DISINI</h2>
+
+      <h3>Jam Operasional dari jam 09.00 - 21.00</h3>
+      <a href="https://wa.link/igf1pu" class="button" target="_blank" rel="noopener noreferrer" aria-label="Customer Service Whatsapp">Admin A</a>
+      <a href="https://wa.link/znc48i" class="button" target="_blank" rel="noopener noreferrer" aria-label="Customer Service whatsapp">Admin I</a>
+      <a href="https://wa.link/6yh0rn" class="button" target="_blank" rel="noopener noreferrer" aria-label="Customer Service WhatsApp">Admin K</a>
+      <a href="https://wa.link/hvr7t8" class="button" target="_blank" rel="noopener noreferrer" aria-label="Customer Service WhatsApp">Admin Z</a>
+      <h3>Mohon bersabar ketika belum dibalas dan JANGAN SPAM!</h3>
+    </section>
+
+  <!-- Popup notifikasi -->
+  <div id="popup" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <footer>
+    &copy; 2025 FRAXSTORE. All rights reserved.
+  </footer>
+
+  <script>
+    // Fungsi menampilkan popup notifikasi
+    function showPopup(message) {
+      const popup = document.getElementById('popup');
+      popup.textContent = message;
+      popup.classList.add('show');
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 2500);
+    }
+
+    // Tambahkan event listener ke semua tombol dengan class 'button'
+    document.querySelectorAll('.button').forEach(button => {
+      button.addEventListener('click', (e) => {
+        // Jika tombol memiliki href '#' (placeholder), cegah default dan beri notifikasi
+        if (button.getAttribute('href') === '#') {
+          e.preventDefault();
+          showPopup('Link sedang dalam pengembangan.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
